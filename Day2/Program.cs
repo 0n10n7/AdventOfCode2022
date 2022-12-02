@@ -8,42 +8,44 @@ namespace MyApp // Note: actual namespace depends on the project name.
         {
             int rounds = 0;
             int points = 0;
+            char rock = 'A';
+            char paper = 'B';
+            char scissors = 'C';
             foreach (string line in System.IO.File.ReadLines(@"AdventOfCodeInputDay2.txt"))
             {  
-                if(line.Contains('X')){//ROCK
-                    points++;
-                    if(line.Contains('A')){
+                if(line.Contains('X')){//LOSE
+                    if(line.Contains(rock)){
                         points +=3;
                     }
-                    if(line.Contains('B')){
-                        //no points change
+                    if(line.Contains(paper)){
+                        points +=1;
                     }
-                    if(line.Contains('C')){
-                        points +=6;
+                    if(line.Contains(scissors)){
+                        points += 2;
                     }
                 }
-                else if(line.Contains('Y')){//PAPER
-                    points += 2;
-                    if(line.Contains('A')){
-                        points +=6;
+                else if(line.Contains('Y')){//DRAW
+                points += 3;
+                    if(line.Contains(rock)){
+                        points +=1;
                     }
-                    if(line.Contains('B')){
+                    if(line.Contains(paper)){
+                        points +=2;
+                    }
+                    if(line.Contains(scissors)){
                         points +=3;
-                    }
-                    if(line.Contains('C')){
-                        //no points change
                     }
                 }
-                else if(line.Contains('Z')){//SCISSORS
-                    points += 3;
-                    if(line.Contains('A')){
-                        //no points change
+                else if(line.Contains('Z')){//WIN
+                points += 6;
+                    if(line.Contains(rock)){
+                        points +=2;
                     }
-                    if(line.Contains('B')){
-                        points +=6;
-                    }
-                    if(line.Contains('C')){
+                    if(line.Contains(paper)){
                         points +=3;
+                    }
+                    if(line.Contains(scissors)){
+                        points +=1;
                     }
                 }
                 rounds++;
