@@ -87,7 +87,8 @@ namespace Day4
                     Console.WriteLine($" {firstHalf2} and {lastHalf2} is larger than {firstHalf} and {lastHalf}");
                     answer ++;
                 }
-                else if((int.Parse(firstHalf) <= int.Parse(lastHalf2)) && ( int.Parse(lastHalf)>= int.Parse(firstHalf2))){
+                else if((int.Parse(firstHalf) <= int.Parse(lastHalf2)) && ( int.Parse(lastHalf)>= int.Parse(firstHalf2)))
+                {
                     answer ++;
                 }
 
