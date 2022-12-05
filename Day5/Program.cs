@@ -105,12 +105,16 @@ namespace Day5
                     int to = int.Parse(onlyNumber[onlyNumber.Length-1].ToString());
                     Console.WriteLine(to);
                     
+                    List<char> Blurp = new List<char>();
                     for(int i = 0; i<move; i++)
                     {
                         char moved = listOfList[from-1][0];
                         listOfList[from-1].RemoveAt(0);
-                        listOfList[to-1].Insert(0,moved);
+                        Blurp.Add(moved);
+
                     }
+                    listOfList[to-1].InsertRange(0, Blurp);
+
                     Console.Write(column1[0].ToString());
                     Console.Write(column2[0].ToString());
                     Console.Write(column3[0].ToString());
