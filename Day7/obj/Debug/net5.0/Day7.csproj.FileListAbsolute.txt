@@ -3,3 +3,14 @@ C:\AdventOfCode2022\Day7\obj\Debug\net5.0\Day7.GeneratedMSBuildEditorConfig.edit
 C:\AdventOfCode2022\Day7\obj\Debug\net5.0\Day7.AssemblyInfoInputs.cache
 C:\AdventOfCode2022\Day7\obj\Debug\net5.0\Day7.AssemblyInfo.cs
 C:\AdventOfCode2022\Day7\obj\Debug\net5.0\Day7.csproj.CoreCompileInputs.cache
+C:\AdventOfCode2022\Day7\bin\Debug\net5.0\Day7.exe
+C:\AdventOfCode2022\Day7\bin\Debug\net5.0\Day7.deps.json
+C:\AdventOfCode2022\Day7\bin\Debug\net5.0\Day7.runtimeconfig.json
+C:\AdventOfCode2022\Day7\bin\Debug\net5.0\Day7.runtimeconfig.dev.json
+C:\AdventOfCode2022\Day7\bin\Debug\net5.0\Day7.dll
+C:\AdventOfCode2022\Day7\bin\Debug\net5.0\Day7.pdb
+C:\AdventOfCode2022\Day7\obj\Debug\net5.0\Day7.dll
+C:\AdventOfCode2022\Day7\obj\Debug\net5.0\refint\Day7.dll
+C:\AdventOfCode2022\Day7\obj\Debug\net5.0\Day7.pdb
+C:\AdventOfCode2022\Day7\obj\Debug\net5.0\Day7.genruntimeconfig.cache
+C:\AdventOfCode2022\Day7\obj\Debug\net5.0\ref\Day7.dll

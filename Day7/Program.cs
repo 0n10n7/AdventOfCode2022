@@ -1,11 +1,12 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 
 namespace Day7
 {
     class Program
     {
-        static int Main(string[] args)
+        static void Main(string[] args)
         {
             int currentDir = 0;
             List<string> dirListNames = new List<string>();
@@ -22,9 +23,6 @@ namespace Day7
                     Console.WriteLine(line.Remove(0,4));
                     currentDir++;
                 }
-                else{
-                    Console.Write("");
-                }
                 if(char.IsDigit(line[0]))
                 {
                     string fileSize = "";
@@ -34,17 +32,9 @@ namespace Day7
                         {
                             fileSize += line[i].ToString();
                         }
-                        else{
-                            Console.Write("");
-                        }
-                        
                     }
                     sum += int.Parse(fileSize);
                 }
-                else{
-                    Console.Write("");
-                }
-                Console.Write("");
             }
             
             for(int j = 0; j < dir.Count-1; j++){
