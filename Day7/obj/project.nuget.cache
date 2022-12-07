@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "mdEGXOfiwL5yuTrtbNydUcbSBjKBTSklj9F5QtygnDv2pHclxrPP5ugawFVN/p8RmNxfqWskHzOmubRYDyBWVQ==",
+  "success": true,
+  "projectFilePath": "C:\\AdventOfCode2022\\Day7\\Day1.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\mikae\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.17\\microsoft.netcore.app.host.win-x64.5.0.17.nupkg.sha512"
+  ],
+  "logs": []
+}
