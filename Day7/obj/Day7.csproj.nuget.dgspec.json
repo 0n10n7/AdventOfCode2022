@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\AdventOfCode2022\\Day7\\Day1.csproj": {}
+    "C:\\AdventOfCode2022\\Day7\\Day7.csproj": {}
   },
   "projects": {
-    "C:\\AdventOfCode2022\\Day7\\Day1.csproj": {
+    "C:\\AdventOfCode2022\\Day7\\Day7.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\AdventOfCode2022\\Day7\\Day1.csproj",
-        "projectName": "Day1",
-        "projectPath": "C:\\AdventOfCode2022\\Day7\\Day1.csproj",
+        "projectUniqueName": "C:\\AdventOfCode2022\\Day7\\Day7.csproj",
+        "projectName": "Day7",
+        "projectPath": "C:\\AdventOfCode2022\\Day7\\Day7.csproj",
         "packagesPath": "C:\\Users\\mikae\\.nuget\\packages\\",
         "outputPath": "C:\\AdventOfCode2022\\Day7\\obj\\",
         "projectStyle": "PackageReference",

@@ -6,15 +6,15 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v5.0": {
-      "Day1/1.0.0": {
+      "Day7/1.0.0": {
         "runtime": {
-          "Day1.dll": {}
+          "Day7.dll": {}
         }
       }
     }
   },
   "libraries": {
-    "Day1/1.0.0": {
+    "Day7/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

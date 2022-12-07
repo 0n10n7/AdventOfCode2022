@@ -22,6 +22,9 @@ namespace Day7
                     Console.WriteLine(line.Remove(0,4));
                     currentDir++;
                 }
+                else{
+                    Console.Write("");
+                }
                 if(char.IsDigit(line[0]))
                 {
                     string fileSize = "";
@@ -31,13 +34,19 @@ namespace Day7
                         {
                             fileSize += line[i].ToString();
                         }
-                        Console.Write("");
+                        else{
+                            Console.Write("");
+                        }
+                        
                     }
                     sum += int.Parse(fileSize);
                 }
+                else{
+                    Console.Write("");
+                }
                 Console.Write("");
             }
-
+            
             for(int j = 0; j < dir.Count-1; j++){
                 string name = dirListNames[j];
                 int num = dir[j];

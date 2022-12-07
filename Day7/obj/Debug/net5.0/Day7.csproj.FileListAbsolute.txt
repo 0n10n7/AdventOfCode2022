@@ -1,0 +1,5 @@
+C:\AdventOfCode2022\Day7\obj\Debug\net5.0\Day7.csproj.AssemblyReference.cache
+C:\AdventOfCode2022\Day7\obj\Debug\net5.0\Day7.GeneratedMSBuildEditorConfig.editorconfig
+C:\AdventOfCode2022\Day7\obj\Debug\net5.0\Day7.AssemblyInfoInputs.cache
+C:\AdventOfCode2022\Day7\obj\Debug\net5.0\Day7.AssemblyInfo.cs
+C:\AdventOfCode2022\Day7\obj\Debug\net5.0\Day7.csproj.CoreCompileInputs.cache
