@@ -56,9 +56,7 @@ namespace Day7
             {
                 for(int i = 0; i < childList[j].Count; i++)
                 {
-                    if(parent.Contains(childList[j][i])){
-                        
-                    }
+                    
                 }
             }
             for(int j = 0; j < dir.Count; j++){
@@ -66,6 +64,9 @@ namespace Day7
                 // Console.WriteLine(childList[j].Count);
                 for(int k = 0; k < childList[j].Count-1; k++)
                 {
+                    if(parent.Contains(childList[j][k])){
+                        
+                    }
                     // Console.WriteLine("Yup the loop did");
                     childsum += dir[dirListNames.IndexOf(childList[j][k])];
                     Console.WriteLine(childsum);
