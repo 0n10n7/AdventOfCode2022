@@ -42,10 +42,10 @@ namespace Day8
             {
                 bool xLarger = false;
                 bool yLarger = false;
-                bool diagonalLarger1 = false;
-                bool diagonalLarger2 = false;
-                bool diagonalLarger3 = false;
-                bool diagonalLarger4 = false;
+                // bool diagonalLarger1 = false;
+                // bool diagonalLarger2 = false;
+                // bool diagonalLarger3 = false;
+                // bool diagonalLarger4 = false;
                 List<Tree> largerTrees = new List<Tree>();
                 foreach (var tree in trees)
                 {
@@ -57,10 +57,10 @@ namespace Day8
                 {
                     xLarger = false;
                     yLarger = false;
-                    diagonalLarger1 = false;
-                    diagonalLarger2 = false;
-                    diagonalLarger3 = false;
-                    diagonalLarger4 = false;
+                    // // diagonalLarger1 = false;
+                    // // diagonalLarger2 = false;
+                    // // diagonalLarger3 = false;
+                    // // diagonalLarger4 = false;
                     if(item.x==largerTree.x){
                         Console.WriteLine("There is a larger tree in the same x cord {0}" , largerTree);
                         xLarger=true;
@@ -69,27 +69,30 @@ namespace Day8
                         Console.WriteLine("There is a larger tree in the same y cord {0}" , largerTree);
                         yLarger=true;
                     }
-                    for(int i = 0; i < largerTrees.Count; i++){
-                        if(item.x+i==largerTree.x && item.y+i==largerTree.y){
-                            Console.WriteLine("There is a larger tree diagonally {0}" , largerTree);
-                            diagonalLarger1=true;
-                        }
-                        if(item.x+i==largerTree.x && item.y-i==largerTree.y){
-                            Console.WriteLine("There is a larger tree diagonally {0}" , largerTree);
-                            diagonalLarger2=true;
-                        }
-                        if(item.x-i==largerTree.x && item.y+i==largerTree.y){
-                            Console.WriteLine("There is a larger tree diagonally {0}" , largerTree);
-                            diagonalLarger3=true;
-                        }
-                        if(item.x-i==largerTree.x && item.y-i==largerTree.y){
-                            Console.WriteLine("There is a larger tree diagonally {0}" , largerTree);
-                            diagonalLarger4=true;
-                        }
-                    }
+                    if(xLarger && yLarger ){//&& diagonalLarger1 && diagonalLarger2 && diagonalLarger3 && diagonalLarger4
+                    break;
+                }
+                    // for(int i = 0; i < largerTrees.Count; i++){
+                    //     if(item.x+i==largerTree.x && item.y+i==largerTree.y){
+                    //         Console.WriteLine("There is a larger tree diagonally {0}" , largerTree);
+                    //         diagonalLarger1=true;
+                    //     }
+                    //     if(item.x+i==largerTree.x && item.y-i==largerTree.y){
+                    //         Console.WriteLine("There is a larger tree diagonally {0}" , largerTree);
+                    //         diagonalLarger2=true;
+                    //     }
+                    //     if(item.x-i==largerTree.x && item.y+i==largerTree.y){
+                    //         Console.WriteLine("There is a larger tree diagonally {0}" , largerTree);
+                    //         diagonalLarger3=true;
+                    //     }
+                    //     if(item.x-i==largerTree.x && item.y-i==largerTree.y){
+                    //         Console.WriteLine("There is a larger tree diagonally {0}" , largerTree);
+                    //         diagonalLarger4=true;
+                    //     }
+                    // }
 
                 }
-                if(xLarger && yLarger && diagonalLarger1 && diagonalLarger2 && diagonalLarger3 && diagonalLarger4){
+                if(xLarger && yLarger ){//&& diagonalLarger1 && diagonalLarger2 && diagonalLarger3 && diagonalLarger4
                     Console.WriteLine("Tree is invisible from the outside");
                 }
                 else{
