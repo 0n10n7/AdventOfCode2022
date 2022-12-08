@@ -38,38 +38,48 @@ namespace Day8
                 yPointer++;
                 xPointer=1;
             }
-            foreach (var item in trees)
+            foreach (var tree in trees)
             {
+                Console.WriteLine("New Tree");
                 bool xLarger = false;
                 bool yLarger = false;
+                bool xLarger2 = false;
+                bool yLarger2 = false;
                 // bool diagonalLarger1 = false;
                 // bool diagonalLarger2 = false;
                 // bool diagonalLarger3 = false;
                 // bool diagonalLarger4 = false;
                 List<Tree> largerTrees = new List<Tree>();
-                foreach (var tree in trees)
+                foreach (var largerTree in trees)
                 {
-                    if(tree.height > item.height){
-                        largerTrees.Add(tree);
+                    if(largerTree.height > tree.height){
+                        largerTrees.Add(largerTree);
                     }
                 }
                 foreach (var largerTree in largerTrees)
                 {
-                    xLarger = false;
-                    yLarger = false;
+                    
                     // // diagonalLarger1 = false;
                     // // diagonalLarger2 = false;
                     // // diagonalLarger3 = false;
                     // // diagonalLarger4 = false;
-                    if(item.x==largerTree.x){
-                        Console.WriteLine("There is a larger tree in the same x cord {0}" , largerTree);
+                    if(tree.x==largerTree.x && tree.y < largerTree.y && xLarger==false){
+                        Console.WriteLine("There is a larger tree above {0}" , largerTree);
                         xLarger=true;
                     }
-                    if(item.y==largerTree.y){
-                        Console.WriteLine("There is a larger tree in the same y cord {0}" , largerTree);
+                    if(tree.x==largerTree.x && tree.y > largerTree.y && xLarger2==false){
+                        Console.WriteLine("There is a larger below {0}" , largerTree);
+                        xLarger2=true;
+                    }
+                    if(tree.y==largerTree.y && tree.x < largerTree.x && yLarger==false){
+                        Console.WriteLine("There is a larger tree to the right {0}" , largerTree);
                         yLarger=true;
                     }
-                    if(xLarger && yLarger ){//&& diagonalLarger1 && diagonalLarger2 && diagonalLarger3 && diagonalLarger4
+                    if(tree.y==largerTree.y && tree.x > largerTree.x && yLarger2==false){
+                        Console.WriteLine("There is a larger tree to the left {0}" , largerTree);
+                        yLarger2=true;
+                    }
+                    if(xLarger && yLarger && xLarger2 && yLarger2){//&& diagonalLarger1 && diagonalLarger2 && diagonalLarger3 && diagonalLarger4
                     break;
                 }
                     // for(int i = 0; i < largerTrees.Count; i++){
@@ -92,12 +102,12 @@ namespace Day8
                     // }
 
                 }
-                if(xLarger && yLarger ){//&& diagonalLarger1 && diagonalLarger2 && diagonalLarger3 && diagonalLarger4
+                if(xLarger && yLarger && xLarger2 && yLarger2 ){//&& diagonalLarger1 && diagonalLarger2 && diagonalLarger3 && diagonalLarger4
                     Console.WriteLine("Tree is invisible from the outside");
                 }
                 else{
                     Console.WriteLine("Tree is visible from the outside");
-                    visibleTrees.Add(item);
+                    visibleTrees.Add(tree);
                 }
             }
             Console.WriteLine("answer is: {0}",visibleTrees.Count);
