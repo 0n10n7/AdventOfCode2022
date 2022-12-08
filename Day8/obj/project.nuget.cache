@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "6yd4pIgWwRg+JkG2zl0DQVHd2dHUzwYhrxXxOJ0Gm/176czjmkbUXhffvYU/nTtnpJhogFIO3aETgBYKiaffrA==",
+  "dgSpecHash": "3LeGRmUBJXBjcuKm7ad8mkzZ4t9KG7SKqR+Q8LjnpK+6425+UQUnXvot5mGaxHg7dG4yGrvR9YK5AuczgqHEPw==",
   "success": true,
-  "projectFilePath": "C:\\AdventOfCode2022\\Day7\\Day7.csproj",
+  "projectFilePath": "C:\\AdventOfCode2022\\Day8\\Day7.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mikae\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.17\\microsoft.netcore.app.host.win-x64.5.0.17.nupkg.sha512"
   ],
